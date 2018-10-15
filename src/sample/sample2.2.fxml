@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="901.0" prefWidth="1236.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <ImageView fitHeight="941.0" fitWidth="1239.0">
+            <image>
+                <Image url="@../textures/background.jpg" />
+            </image>
+        </ImageView>
+        <VBox prefHeight="901.0" prefWidth="1236.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <AnchorPane prefHeight="96.0" prefWidth="1236.0">
+                     <children>
+                        <Label prefHeight="40.0" prefWidth="264.0" text="player 1" textFill="#9a9a9a">
+                           <font>
+                              <Font size="41.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="1119.0" layoutY="26.0" mnemonicParsing="false" onMouseClicked="#overBuild" prefHeight="55.0" prefWidth="95.0" text="End" />
+                        <Button layoutX="1002.0" layoutY="26.0" mnemonicParsing="false" onMouseClicked="#reset" prefHeight="55.0" prefWidth="95.0" text="Reset" />
+                        <Button layoutX="882.0" layoutY="26.0" mnemonicParsing="false" onMouseClicked="#autoInstall" prefHeight="55.0" prefWidth="95.0" text="Auto install" />
+                     </children></AnchorPane>
+                    </children>
+                </HBox>
+                <HBox prefHeight="809.0" prefWidth="1236.0">
+                    <children>
+                        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="809.0" prefWidth="1238.0">
+                            <children>
+                                <ImageView fitHeight="488.0" fitWidth="488.0" layoutX="26.0" layoutY="291.0">
+                                    <image>
+                                        <Image url="@../textures/field.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c1" fitHeight="40.0" fitWidth="40.0" layoutX="74.0" layoutY="339.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c2" fitHeight="40.0" fitWidth="40.0" layoutX="118.0" layoutY="339.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c3" fitHeight="40.0" fitWidth="40.0" layoutX="162.0" layoutY="339.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c4" fitHeight="40.0" fitWidth="40.0" layoutX="206.0" layoutY="339.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c5" fitHeight="40.0" fitWidth="40.0" layoutX="250.0" layoutY="339.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c6" fitHeight="40.0" fitWidth="40.0" layoutX="294.0" layoutY="339.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c7" fitHeight="40.0" fitWidth="40.0" layoutX="338.0" layoutY="339.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c8" fitHeight="40.0" fitWidth="40.0" layoutX="382.0" layoutY="339.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c9" fitHeight="40.0" fitWidth="40.0" layoutX="426.0" layoutY="339.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c10" fitHeight="40.0" fitWidth="40.0" layoutX="470.0" layoutY="339.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c11" fitHeight="40.0" fitWidth="40.0" layoutX="74.0" layoutY="383.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c12" fitHeight="40.0" fitWidth="40.0" layoutX="118.0" layoutY="383.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c13" fitHeight="40.0" fitWidth="40.0" layoutX="162.0" layoutY="383.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c14" fitHeight="40.0" fitWidth="40.0" layoutX="206.0" layoutY="383.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c15" fitHeight="40.0" fitWidth="40.0" layoutX="250.0" layoutY="383.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c16" fitHeight="40.0" fitWidth="40.0" layoutX="294.0" layoutY="383.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c17" fitHeight="40.0" fitWidth="40.0" layoutX="338.0" layoutY="383.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c18" fitHeight="40.0" fitWidth="40.0" layoutX="382.0" layoutY="383.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c19" fitHeight="40.0" fitWidth="40.0" layoutX="426.0" layoutY="383.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c20" fitHeight="40.0" fitWidth="40.0" layoutX="470.0" layoutY="383.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c21" fitHeight="40.0" fitWidth="40.0" layoutX="74.0" layoutY="427.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c22" fitHeight="40.0" fitWidth="40.0" layoutX="118.0" layoutY="427.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c23" fitHeight="40.0" fitWidth="40.0" layoutX="162.0" layoutY="427.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c24" fitHeight="40.0" fitWidth="40.0" layoutX="206.0" layoutY="427.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c25" fitHeight="40.0" fitWidth="40.0" layoutX="250.0" layoutY="427.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c26" fitHeight="40.0" fitWidth="40.0" layoutX="294.0" layoutY="427.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c27" fitHeight="40.0" fitWidth="40.0" layoutX="338.0" layoutY="427.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c28" fitHeight="40.0" fitWidth="40.0" layoutX="382.0" layoutY="427.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c29" fitHeight="40.0" fitWidth="40.0" layoutX="426.0" layoutY="427.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c30" fitHeight="40.0" fitWidth="40.0" layoutX="470.0" layoutY="427.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c31" fitHeight="40.0" fitWidth="40.0" layoutX="74.0" layoutY="471.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c32" fitHeight="40.0" fitWidth="40.0" layoutX="118.0" layoutY="471.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c33" fitHeight="40.0" fitWidth="40.0" layoutX="162.0" layoutY="471.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c34" fitHeight="40.0" fitWidth="40.0" layoutX="206.0" layoutY="471.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c35" fitHeight="40.0" fitWidth="40.0" layoutX="250.0" layoutY="471.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c36" fitHeight="40.0" fitWidth="40.0" layoutX="294.0" layoutY="471.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c37" fitHeight="40.0" fitWidth="40.0" layoutX="338.0" layoutY="471.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c38" fitHeight="40.0" fitWidth="40.0" layoutX="382.0" layoutY="471.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c39" fitHeight="40.0" fitWidth="40.0" layoutX="426.0" layoutY="471.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c40" fitHeight="40.0" fitWidth="40.0" layoutX="470.0" layoutY="471.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c41" fitHeight="40.0" fitWidth="40.0" layoutX="74.0" layoutY="515.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c42" fitHeight="40.0" fitWidth="40.0" layoutX="118.0" layoutY="515.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c43" fitHeight="40.0" fitWidth="40.0" layoutX="162.0" layoutY="515.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c44" fitHeight="40.0" fitWidth="40.0" layoutX="206.0" layoutY="515.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c45" fitHeight="40.0" fitWidth="40.0" layoutX="250.0" layoutY="515.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c46" fitHeight="40.0" fitWidth="40.0" layoutX="294.0" layoutY="515.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c47" fitHeight="40.0" fitWidth="40.0" layoutX="338.0" layoutY="515.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c48" fitHeight="40.0" fitWidth="40.0" layoutX="382.0" layoutY="515.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c49" fitHeight="40.0" fitWidth="40.0" layoutX="426.0" layoutY="515.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c50" fitHeight="40.0" fitWidth="40.0" layoutX="470.0" layoutY="515.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c51" fitHeight="40.0" fitWidth="40.0" layoutX="74.0" layoutY="559.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c52" fitHeight="40.0" fitWidth="40.0" layoutX="118.0" layoutY="559.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c53" fitHeight="40.0" fitWidth="40.0" layoutX="162.0" layoutY="559.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c54" fitHeight="40.0" fitWidth="40.0" layoutX="206.0" layoutY="559.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c55" fitHeight="40.0" fitWidth="40.0" layoutX="250.0" layoutY="559.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c56" fitHeight="40.0" fitWidth="40.0" layoutX="294.0" layoutY="559.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c57" fitHeight="40.0" fitWidth="40.0" layoutX="338.0" layoutY="559.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c58" fitHeight="40.0" fitWidth="40.0" layoutX="382.0" layoutY="559.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c59" fitHeight="40.0" fitWidth="40.0" layoutX="426.0" layoutY="559.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c60" fitHeight="40.0" fitWidth="40.0" layoutX="470.0" layoutY="559.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c61" fitHeight="40.0" fitWidth="40.0" layoutX="74.0" layoutY="603.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c62" fitHeight="40.0" fitWidth="40.0" layoutX="118.0" layoutY="603.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c63" fitHeight="40.0" fitWidth="40.0" layoutX="162.0" layoutY="603.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c64" fitHeight="40.0" fitWidth="40.0" layoutX="206.0" layoutY="603.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c65" fitHeight="40.0" fitWidth="40.0" layoutX="250.0" layoutY="603.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c66" fitHeight="40.0" fitWidth="40.0" layoutX="294.0" layoutY="603.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c67" fitHeight="40.0" fitWidth="40.0" layoutX="338.0" layoutY="603.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c70" fitHeight="40.0" fitWidth="40.0" layoutX="470.0" layoutY="603.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c68" fitHeight="40.0" fitWidth="40.0" layoutX="382.0" layoutY="603.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c69" fitHeight="40.0" fitWidth="40.0" layoutX="426.0" layoutY="603.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c80" fitHeight="40.0" fitWidth="40.0" layoutX="470.0" layoutY="647.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c71" fitHeight="40.0" fitWidth="40.0" layoutX="74.0" layoutY="647.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c72" fitHeight="40.0" fitWidth="40.0" layoutX="118.0" layoutY="647.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c73" fitHeight="40.0" fitWidth="40.0" layoutX="162.0" layoutY="647.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c74" fitHeight="40.0" fitWidth="40.0" layoutX="206.0" layoutY="647.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c75" fitHeight="40.0" fitWidth="40.0" layoutX="250.0" layoutY="647.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c76" fitHeight="40.0" fitWidth="40.0" layoutX="294.0" layoutY="647.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c77" fitHeight="40.0" fitWidth="40.0" layoutX="338.0" layoutY="647.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c78" fitHeight="40.0" fitWidth="40.0" layoutX="382.0" layoutY="647.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c79" fitHeight="40.0" fitWidth="40.0" layoutX="426.0" layoutY="647.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c90" fitHeight="40.0" fitWidth="40.0" layoutX="470.0" layoutY="691.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c81" fitHeight="40.0" fitWidth="40.0" layoutX="74.0" layoutY="691.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c82" fitHeight="40.0" fitWidth="40.0" layoutX="118.0" layoutY="691.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c83" fitHeight="40.0" fitWidth="40.0" layoutX="162.0" layoutY="691.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c84" fitHeight="40.0" fitWidth="40.0" layoutX="206.0" layoutY="691.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c85" fitHeight="40.0" fitWidth="40.0" layoutX="250.0" layoutY="691.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c86" fitHeight="40.0" fitWidth="40.0" layoutX="294.0" layoutY="691.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c87" fitHeight="40.0" fitWidth="40.0" layoutX="338.0" layoutY="691.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c88" fitHeight="40.0" fitWidth="40.0" layoutX="382.0" layoutY="691.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c89" fitHeight="40.0" fitWidth="40.0" layoutX="426.0" layoutY="691.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c100" fitHeight="40.0" fitWidth="40.0" layoutX="470.0" layoutY="735.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c91" fitHeight="40.0" fitWidth="40.0" layoutX="74.0" layoutY="735.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c92" fitHeight="40.0" fitWidth="40.0" layoutX="118.0" layoutY="735.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c93" fitHeight="40.0" fitWidth="40.0" layoutX="162.0" layoutY="735.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c94" fitHeight="40.0" fitWidth="40.0" layoutX="206.0" layoutY="735.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c96" fitHeight="40.0" fitWidth="40.0" layoutX="294.0" layoutY="735.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c95" fitHeight="40.0" fitWidth="40.0" layoutX="250.0" layoutY="735.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c97" fitHeight="40.0" fitWidth="40.0" layoutX="338.0" layoutY="735.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c98" fitHeight="40.0" fitWidth="40.0" layoutX="382.0" layoutY="735.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="c99" fitHeight="40.0" fitWidth="40.0" layoutX="426.0" layoutY="735.0">
+                                    <image>
+                                        <Image url="@../textures/cell.png" />
+                                    </image>
+                                </ImageView>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="554.0" layoutY="339.0" onMouseClicked="#onClickShip" onMouseDragged="#onDraggedShip" onMouseEntered="#onEnteredShip" onMouseReleased="#onMouseDragExited">
+                           <image>
+                              <Image url="@../textures/Ships/1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="554.0" layoutY="339.0" onMouseClicked="#onClickShip" onMouseDragged="#onDraggedShip" onMouseEntered="#onEnteredShip" onMouseReleased="#onMouseDragExited">
+                           <image>
+                              <Image url="@../textures/Ships/1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="554.0" layoutY="339.0" onMouseClicked="#onClickShip" onMouseDragged="#onDraggedShip" onMouseEntered="#onEnteredShip" onMouseReleased="#onMouseDragExited">
+                           <image>
+                              <Image url="@../textures/Ships/1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="84.0" fitWidth="40.0" layoutX="554.0" layoutY="383.0" onMouseClicked="#onClickShip" onMouseDragged="#onDraggedShip" onMouseEntered="#onEnteredShip" onMouseReleased="#onMouseDragExited">
+                           <image>
+                              <Image url="@../textures/Ships/2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="84.0" fitWidth="40.0" layoutX="554.0" layoutY="383.0" onMouseClicked="#onClickShip" onMouseDragged="#onDraggedShip" onMouseEntered="#onEnteredShip" onMouseReleased="#onMouseDragExited">
+                           <image>
+                              <Image url="@../textures/Ships/2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="128.0" fitWidth="40.0" layoutX="554.0" layoutY="475.0" onMouseClicked="#onClickShip" onMouseDragged="#onDraggedShip" onMouseEntered="#onEnteredShip" onMouseReleased="#onMouseDragExited">
+                           <image>
+                              <Image url="@../textures/Ships/3.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="554.0" layoutY="339.0" onMouseClicked="#onClickShip" onMouseDragged="#onDraggedShip" onMouseEntered="#onEnteredShip" onMouseReleased="#onMouseDragExited">
+                           <image>
+                              <Image url="@../textures/Ships/1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="84.0" fitWidth="40.0" layoutX="554.0" layoutY="383.0" onMouseClicked="#onClickShip" onMouseDragged="#onDraggedShip" onMouseEntered="#onEnteredShip" onMouseReleased="#onMouseDragExited">
+                           <image>
+                              <Image url="@../textures/Ships/2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="128.0" fitWidth="40.0" layoutX="554.0" layoutY="471.0" onMouseClicked="#onClickShip" onMouseDragged="#onDraggedShip" onMouseEntered="#onEnteredShip" onMouseReleased="#onMouseDragExited">
+                           <image>
+                              <Image url="@../textures/Ships/3.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="172.0" fitWidth="40.0" layoutX="554.0" layoutY="607.0" onMouseClicked="#onClickShip" onMouseDragged="#onDraggedShip" onMouseEntered="#onEnteredShip" onMouseReleased="#onMouseDragExited">
+                           <image>
+                              <Image url="@../textures/Ships/4.png" />
+                           </image>
+                        </ImageView>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
