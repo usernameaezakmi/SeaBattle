@@ -615,7 +615,7 @@ public class deleted {
             trans.play();
             //im.setX(im.getX() - move);
             //im.setY(im.getY() - move);
-
+//qq
         }
     }
 
