@@ -901,10 +901,13 @@ public class Controller {
         if (k == 20) {
             Stage st = (Stage) Stage.getWindows().get(0);
 
-
-            try{
-            st.setScene(new Scene((AnchorPane) FXMLLoader.load(getClass().getResource("sample3.fxml"))));
-            }catch (Exception e){}
+            AnchorPane root = null;
+            try {
+                root = (AnchorPane) FXMLLoader.load(getClass().getResource("sample3.fxml"));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            st.setScene(new Scene(root));
         } else {
             reset();
             System.out.println("E!=" + k);

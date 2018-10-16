@@ -32,7 +32,7 @@
                                         <Image url="@../textures/field.png" />
                                     </image>
                                 </ImageView>
-                                <ImageView fx:id="c1" fitHeight="40.0" fitWidth="40.0" layoutX="74.0" layoutY="339.0" onMouseClicked="#onClickC1">
+                                <ImageView fx:id="c1" fitHeight="40.0" fitWidth="40.0" layoutX="74.0" layoutY="339.0">
                                     <image>
                                         <Image url="@../textures/cell.png" />
                                     </image>
@@ -541,7 +541,7 @@
                                         <Image url="@../textures/field.png" />
                                     </image>
                                 </ImageView>
-                                <ImageView fx:id="c101" fitHeight="40.0" fitWidth="40.0" layoutX="118.0" layoutY="342.0" onMouseClicked="#onClickC1">
+                                <ImageView fx:id="c101" fitHeight="40.0" fitWidth="40.0" layoutX="118.0" layoutY="342.0">
                                     <image>
                                         <Image url="@../textures/cell.png" />
                                     </image>
